@@ -110,7 +110,7 @@ projectsContainer.innerHTML = projects.map(project => `
       <div class="project-tags">
         ${project.tags.map(tag => `<a href="https://www.google.com/search?q=${encodeURIComponent(tag)}" target="_blank" rel="noopener noreferrer" class="tag" style="text-decoration: none; cursor: pointer; transition: all 0.2s;" data-tooltip="Finde mehr über ${tag} heraus!">${tag}</a>`).join('')}
       </div>
-      <a href="${project.link}" class="project-link">Projekt ansehen →</a>
+      <a href="${project.link}" class="btn btn-outline" style="margin-top: auto; align-self: flex-start;">Projekt ansehen →</a>
     </div>
   </article>
 `).join('');
