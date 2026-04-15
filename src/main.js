@@ -58,7 +58,7 @@ document.querySelector('#app').innerHTML = `
       <span class="close-btn">&times;</span>
       <h2 class="section-title" style="margin-bottom: 1.5rem;">Storytime!</h2>
       <p style="color: var(--text-secondary); text-align: left; font-size: 1.1rem; line-height: 1.8;">
-        Ich bin Louis, 20 Jahre alt, und programmiere – mit Unterbrechungen – seit ca. 5 Jahren. Angefangen habe ich damals mit einem Minecraft-Plugin für einen RPG-Server, wo ich einem Kumpel geholfen habe, kleinere Sachen zu schreiben, um ein bisschen zu lernen. Über die Zeit habe ich immer mehr Gefallen daran gefunden, Systeme zu entwerfen und Hintergrundprozesse zum Laufen zu bringen. Aktuell arbeite ich an einem kleinen Indie-Game namens „Project-Apocalypse“, welches sich gerade noch ganz am Anfang befindet. Meine bisher größte Errungenschaft ist es, einen funktionierenden Networking-Code auf die Beine gestellt zu haben, den ich selbst geplant und entworfen habe. Falls es noch nicht geschehen ist, schau gerne in meine Projekte! PS: Mein Code ist zu 110 % selbst ausgedacht und handgeschrieben.</p>
+        Ich bin Louis, 20 Jahre alt, und programmiere – mit Unterbrechungen – seit ca. 5 Jahren. Angefangen habe ich damals mit einem Minecraft-Plugin für einen RPG-Server, wo ich einem Kumpel geholfen habe, kleinere Sachen zu schreiben, um ein bisschen zu lernen. Über die Zeit habe ich immer mehr Gefallen daran gefunden, Systeme zu entwerfen und Hintergrundprozesse zum Laufen zu bringen. Aktuell arbeite ich an einem kleinen Indie-Game namens „Protocol-Apocalypse“, welches sich gerade noch ganz am Anfang befindet. Meine bisher größte Errungenschaft ist es, einen funktionierenden Networking-Code auf die Beine gestellt zu haben, den ich selbst geplant und entworfen habe. Falls es noch nicht geschehen ist, schau gerne in meine Projekte! PS: Mein Code ist zu 110 % selbst ausgedacht und handgeschrieben.</p>
       <div style="margin-top: 2rem;">
         <a href="#projects" class="btn btn-primary" id="modal-project-btn">Zu meinen Projekten</a>
       </div>
@@ -75,10 +75,10 @@ const skills = [
 
 const projects = [
   {
-    title: 'Project-Apocalypse',
+    title: 'Protocol-Apocalypse',
     description: 'Ein 2d Open-World Survival Spiel in Entwicklung.',
     tags: ['Game Dev', 'Java', 'LibGDX'],
-    link: 'https://github.com/Sakubami/newgam'
+    link: 'https://github.com/Sakubami/Protocol_Apocalypse'
   },
   {
     title: 'GRDJN-smarthome',
