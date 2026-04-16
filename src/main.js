@@ -66,9 +66,6 @@ document.querySelector('#app').innerHTML = `
   </div>
 `
 
-
-// Styles for the new content (to be moved to style.css in next step if needed, but keeping it simple for now)
-// Data
 const skills = [
   'Java', 'JavaScript', 'TypeScript', 'HikariCP', 'MariaDB', 'React', 'Git', 'UI/UX Design'
 ];
@@ -94,13 +91,11 @@ const projects = [
   }
 ];
 
-// Inject Skills
 const skillsContainer = document.querySelector('.skills-grid');
 skillsContainer.innerHTML = skills.map(skill => `
   <a href="https://www.google.com/search?q=${encodeURIComponent(skill)}" target="_blank" rel="noopener noreferrer" class="skill-tag" style="text-decoration: none; cursor: pointer; display: inline-block;" data-tooltip="Finde mehr über ${skill} heraus!">${skill}</a>
 `).join('');
 
-// Inject Projects
 const projectsContainer = document.querySelector('.projects-grid');
 projectsContainer.innerHTML = projects.map(project => `
   <article class="glass-card project-card">
@@ -115,7 +110,6 @@ projectsContainer.innerHTML = projects.map(project => `
   </article>
 `).join('');
 
-// Modal Logic
 const aboutLink = document.querySelector('#about-link');
 const aboutModal = document.querySelector('#about-modal');
 const closeBtn = document.querySelector('.close-btn');

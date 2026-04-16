@@ -14,7 +14,6 @@
   --font-sans: 'Nunito', 'Inter', system-ui, -apple-system, sans-serif;
   --font-mono: 'Fira Code', monospace;
 
-  /* Spacing */
   --container-width: 1200px;
   --spacing-sm: 1rem;
   --spacing-md: 2rem;
@@ -240,7 +239,6 @@ img {
   font-size: 1.1rem;
 }
 
-/* Footer */
 .footer {
   padding: 2rem 0;
   text-align: center;
@@ -249,7 +247,6 @@ img {
   font-size: 0.9rem;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .hero-title {
     font-size: 2.5rem;
@@ -262,11 +259,9 @@ img {
 
   .nav-links {
     display: none;
-    /* Mobile menu todo if time permits, for now keep simple */
   }
 }
 
-/* Projects Grid */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -331,7 +326,6 @@ img {
   color: var(--accent-primary);
 }
 
-/* Modal Styling */
 .modal {
   opacity: 0;
   visibility: hidden;
@@ -378,12 +372,17 @@ img {
   color: var(--text-primary);
 }
 
-/* Custom Tooltips */
-.tag, .skill-tag, .btn, .project-link {
+.tag,
+.skill-tag,
+.btn,
+.project-link {
   position: relative;
 }
 
-.tag::after, .skill-tag::after, .btn::after, .project-link::after {
+.tag::after,
+.skill-tag::after,
+.btn::after,
+.project-link::after {
   position: absolute;
   bottom: calc(100% + 8px);
   left: 50%;
@@ -404,20 +403,26 @@ img {
   z-index: 100;
 }
 
-.tag::after, .skill-tag::after {
+.tag::after,
+.skill-tag::after {
   content: attr(data-tooltip);
 }
 
-.btn::after, .project-link::after {
+.btn::after,
+.project-link::after {
   content: "Klick mich!";
 }
 
-.tag:hover::after, .skill-tag:hover::after, .btn:hover::after, .project-link:hover::after {
+.tag:hover::after,
+.skill-tag:hover::after,
+.btn:hover::after,
+.project-link:hover::after {
   opacity: 1;
   visibility: visible;
   transform: translateX(-50%) translateY(0);
 }
 
-.btn:hover::after, .project-link:hover::after {
+.btn:hover::after,
+.project-link:hover::after {
   transition-delay: 2s;
 }
